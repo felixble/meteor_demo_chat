@@ -1,0 +1,18 @@
+<template name="chat">
+<h1>Chat</h1>
+    <div>
+        {{#each messages}}
+            {{> message}}
+        {{/each}}
+    </div>
+
+    <div style="margin-top: 20px;">
+        <form class="new-msg">
+            <div class="form-group new-client">
+                <label for="msg">Message</label>
+                <input type="text" class="form-control" id="msg" name="text" placeholder="Message text" autofocus>
+            </div>
+        </form>
+    </div>
+
+</template>
